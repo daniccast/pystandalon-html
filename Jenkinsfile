@@ -10,6 +10,7 @@ pipeline {
                 always{
                     sh 'cat pylint.log'
                     recordIssues enabledForFailure: true, aggregatingResults: true, tool: pyLint(pattern: '**/pylint.log')
+                }
             }
         }
     }
