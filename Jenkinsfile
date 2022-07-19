@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Static code analysis'){
             steps {
-                sh  'python3 -m pylint --output-format=parseable --fail-under=10.0 pystandalonehtml/ --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}"  > pylint.log'
+                sh  'python3 -m pylint --output-format=parseable --fail-under=10.0 pystandalonehtml/ --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" --exit-zero > pylint.log'
                 echo 'linting Success, Generating Report'
                  }
             post{
