@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('clone') {
+        stage('Init') {
             steps {
-                git  url: 'git@github.com:daniccast/pystandalon-html.git'
+                echo "Hola"
             }
         }
     }
