@@ -13,5 +13,17 @@ pipeline {
                 }
             }
         }
+
+        stage('Unit test'){
+            steps{
+                sh 'pip install -r requirements_dev.txt '
+                sh 'python3 -m pytest --junitxml test-results.xml "./tests" '
+            }
+            post{
+                always{
+                    junit '**/test-results.xml'
+                }
+            }
+        }
     }
 }
