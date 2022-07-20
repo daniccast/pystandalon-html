@@ -2,7 +2,7 @@ from cmath import exp
 import os
 import tempfile
 import filecmp
-from pystandalonehtml-marinions import converter
+from pystandalonehtmlmarinions import converter
 
 def test_guess_type():
     # Prepare

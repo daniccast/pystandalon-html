@@ -41,7 +41,7 @@ setup(
     include_package_data=True,
     keywords="html to single html",
     name="pystandalonehtml-marinions",
-    packages=find_packages(include=["pystandalonehtml-marinions"]),
+    packages=find_packages(include=["pystandalonehtmlmarinions"]),
     setup_requires=SETUP_REQUIREMENTS,
     test_suite="tests",
     tests_require=TEST_REQUIREMENTS,

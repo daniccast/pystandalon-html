@@ -30,7 +30,7 @@ pipeline {
                 sh 'pip install twine'
                 sh 'rm -rf dist'
                 sh 'python3 setup.py sdist bdist_wheel'
-                sh 'python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u daniccast -p $psstestpy '
+                sh 'python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* -u daniccast -p ${psstestpy} '
             }
             post{
                 always{

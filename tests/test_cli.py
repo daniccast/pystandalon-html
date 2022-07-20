@@ -1,5 +1,5 @@
 from mock import MagicMock
-from pystandalonehtml-marinions import cli
+from pystandalonehtmlmarinions import cli
 
 def test_cli():
     # Prepare
