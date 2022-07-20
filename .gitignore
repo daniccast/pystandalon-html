@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#Lintin
+lint
+test-result
+test-results.xml
+
+
 # C extensions
 *.so
 
