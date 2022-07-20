@@ -28,7 +28,7 @@ pipeline {
         stage('Deployment testpypi'){
             steps{
                 sh 'pip install twine'
-                sh 'rm -rf dist'
+                sh 'rm -rf dist build *.egg-info'
                 sh 'python3 setup.py sdist bdist_wheel'
                 sh 'python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* --skip-existing -u daniccast -p ${psstestpy} '
             }
