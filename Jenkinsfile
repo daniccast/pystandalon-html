@@ -34,7 +34,7 @@ pipeline {
             }
             post{
                 always{
-                    echo 'Completed'
+                    echo 'Completed :)'
                 }
             }
         }
